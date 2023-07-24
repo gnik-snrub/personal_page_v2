@@ -40,16 +40,19 @@ const changeTheme = () => {
     </button>
   </header>
   <section bind:this={about} class="flex items-center justify-center w-full h-screen">
-    <div class="w-1/2 px-8 py-4 border-2 rounded-lg h-fit-content border-plum-500">
-      <h2 class="w-full text-3xl text-center">Hi there, I'm Josiah Morris</h2>
-      <p>Embracing the path of a lifelong learner, I've ventured into the world
-      of web development as a self-taught enthusiast from Australia. Committed
-      to lifelong lonearing, I embrace every opportunity to enhance expertise
-      and stay updated with the ever-changing web development landscape.</p>
-      <p>With a blend of technical skills, creative thinking, and a strong
-      focus on user-centric design, I approach each project with dedication,
-      attention to detail, and a genuine passion for crafting engaging user
-      experiences.</p>
+    <div class="items-center w-2/3 overflow-hidden border-2 rounded-3xl grid lg:grid-cols-4 grid-rows-1 border-plum-500 max-h-96">
+      <img src="Headshot.jpg" alt="Photo of Josiah Morris" class="hidden object-cover w-full h-full lg:object-bottom col-span-1 lg:rounded-s-3xl lg:block">
+      <div class="flex flex-col px-4 py-8 col-span-3 gap-2">
+        <h2 class="w-full my-4 text-3xl text-center ">Hi there, I'm Josiah Morris</h2>
+        <p class="text-center lg:text-left">Embracing the path of a lifelong learner, I've ventured into the world
+        of web development as a self-taught enthusiast from Australia. Committed
+        to lifelong lonearing, I embrace every opportunity to enhance expertise
+        and stay updated with the ever-changing web development landscape.</p>
+        <p class="text-center col-start-2 lg:text-left">With a blend of technical skills, creative thinking, and a strong
+        focus on user-centric design, I approach each project with dedication,
+        attention to detail, and a genuine passion for crafting engaging user
+        experiences.</p>
+      </div>
     </div>
   </section>
   <section bind:this={projects} class="flex items-center justify-center w-full h-screen">
